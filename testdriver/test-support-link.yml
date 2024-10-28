@@ -1,0 +1,14 @@
+version: 4.0.77
+steps:
+  - prompt: Click on "Support" in the header.
+    commands:
+      - command: hover-text
+        text: SUPPORT
+        description: link in the header
+        action: click
+  - prompt: >-
+      Assert that support resources or contact methods are displayed clearly.  #
+      Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: support resources or contact methods are displayed clearly
