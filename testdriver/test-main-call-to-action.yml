@@ -1,0 +1,14 @@
+version: 4.0.77
+steps:
+  - prompt: Click on "Start Building".
+    commands:
+      - command: hover-text
+        text: Start Building
+        description: button to start building
+        action: click
+  - prompt: >-
+      Assert that the user is directed to the correct page or form to start
+      building.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Register for free form is visible
